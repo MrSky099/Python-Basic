@@ -1,4 +1,4 @@
-## Python-Basic
+    ## Python-Basic
 #### 1. Set & Dictionary in python.
 ```
 The set is an unordered collection of data types that is iterable, mutable and has no duplicate elements.
@@ -49,3 +49,13 @@ details('Ahmedabad','Chennai','Mumbai',city='Dehlhi', country = 'India')
 ('ahmedabad', 'chennai', 'mumbai')
 {'city': 'Dehlhi', 'country': 'India'}
 ```
+#### 6. How is memory management done in Python.
+```
+Python uses its private heap space to manage the memory. Basically,
+all the objects and data structures are stored in the private heap space.
+```
+#### 7. What is Python Path.
+```
+Python path is an environment variable that is used to specify the location of python libraries
+```
+
