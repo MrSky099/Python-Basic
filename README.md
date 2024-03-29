@@ -32,3 +32,20 @@ Generators in Python are functions that allow you to generate a sequence of valu
 They use the 'yield' keyword to produce values one at a time, making them memory-efficient and
 useful for handling large datasets or infinite sequences.
 ```
+#### 5. *args and **kwargs in python.
+```
+If you do not know how many arguments that will be passed into your function,
+add a * before the parameter name in the function definition.
+If you do not know how many keyword arguments that will be passed into your function,
+add two asterisk: ** before the parameter name in the function definition.
+```
+```python
+def details(*args, **kwargs):
+    print(args)
+    print(kwargs)
+details('Ahmedabad','Chennai','Mumbai',city='Dehlhi', country = 'India')
+```
+```output
+('ahmedabad', 'chennai', 'mumbai')
+{'city': 'Dehlhi', 'country': 'India'}
+```
