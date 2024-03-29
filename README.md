@@ -1,4 +1,4 @@
-    ## Python-Basic
+## Python-Basic
 #### 1. Set & Dictionary in python.
 ```
 The set is an unordered collection of data types that is iterable, mutable and has no duplicate elements.
