@@ -69,7 +69,30 @@ class Person:
         self.age = age
 ```
 ### OOP (Object-Oriented Programming)
+#### In Python, oop is a that type of programming example that uses objects and classes in programming. It's aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc.
 #### 9. Class & Object in python.
 ```
-
+A class like an object constructor, or a 'Blueprint' for creating objects.
 ```
+```python
+class MyClass:
+  x = 5
+```
+```
+Almost everything in python is an object, with it's properties and Methods.
+```
+```pyton
+p1 = Myclass()
+print(p1.x)
+```
+#### 10. 
+
+
+
+
+
+
+
+
+
+
