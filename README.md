@@ -107,6 +107,60 @@ print(person.__name) #Trying to access encapsulated attribute directly
 # Accessing encapsulated attribute through method
 print("Name:", person.get_name())
 ```
+#### 11. Inheritance in Python.
+```
+Inheritance allows a new class to inherit properties and methods from an existing class.
+In simpler terms, it enables a new class to take on the attributes and behaviors of an existing class, known as the parent or base class.
+```
+```python
+# Parent class (Base class)
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+# Child class (Derived class)
+class Dog(Animal):
+    def bark(self):
+        print("Dog barks")
+
+# Creating a Dog object
+my_dog = Dog()
+
+# Calling methods from both parent and child classes
+my_dog.speak()  # Inherits from Animal class
+my_dog.bark()   # Specific to Dog class
+```
+#### 12. Polymorphism in python.
+```
+Polymorphism in Python allows objects of different classes to be treated as objects of a common superclass.
+This means that a method or function can behave differently based on the object that it's operating on.
+It promotes code reuse and flexibility by enabling the same method or function to work with different types of objects.
+```
+```python
+class Animal:
+    def sound(self):
+        pass
+
+class Dog(Animal):
+    def sound(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow!"
+
+# Function that takes any animal and makes it sound
+def make_sound(animal):
+    return animal.sound()
+
+# Creating instances of Dog and Cat
+dog = Dog()
+cat = Cat()
+
+# Using the make_sound function with different animals
+print(make_sound(dog))  # Output: Woof!
+print(make_sound(cat))  # Output: Meow!
+```
 
 
 
