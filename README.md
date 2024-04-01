@@ -85,7 +85,28 @@ Almost everything in python is an object, with it's properties and Methods.
 p1 = Myclass()
 print(p1.x)
 ```
-#### 10. 
+#### 10. Encapsulation in Python.
+```
+Encapsulation refers to the wrapping data (attributes) and methods (functions) that operate on the data into a single unit or class.
+This puts restrictions on accessing varible and methods directly and can prevent the accidental modification of data.
+To prevent accidental change, an object’s variable can only be changed by an object’s method. Those types of variables are known as private variables.
+```
+```python
+class Person:
+    def __init__(self, name):
+        self.__name = name  # Encapsulated attribute
+
+    def get_name(self):
+        return self.__name
+
+# Creating a person object
+person = Person("John")
+
+print(person.__name) #Trying to access encapsulated attribute directly
+
+# Accessing encapsulated attribute through method
+print("Name:", person.get_name())
+```
 
 
 
