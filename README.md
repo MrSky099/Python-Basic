@@ -58,7 +58,7 @@ all the objects and data structures are stored in the private heap space.
 ```
 Python path is an environment variable that is used to specify the location of python libraries
 ```
-#### 8. What is __init__ in in python.
+#### 8. What is '__init__' in python.
 ```
 It is constructor method & automatically called when new object/class is created. All Classes have a init method.
 ```
