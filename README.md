@@ -161,9 +161,29 @@ cat = Cat()
 print(make_sound(dog))  # Output: Woof!
 print(make_sound(cat))  # Output: Meow!
 ```
+#### 13. Data abstraction in python.
+```
+Data abstraction is a concept in programming that allows us to represent the essential features of an object while hiding the unnecessary details.
+In simpler terms, it's like using a TV remote without knowing how it works internally;
+you just need to know the buttons to press to change channels or adjust the volume.
+```
+```python
+class TV:
+    def __init__(self):
+        self.__is_on = False
+        self.__channel = 0
+        self.__volume = 0
 
+    def turn_on(self):
+        self.__is_on = True
 
+    def turn_off(self):
+        self.__is_on = False
 
+# Using TV without knowing its internal details
+my_tv = TV()
+print(my_tv)
+```
 
 
 
